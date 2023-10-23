@@ -5,6 +5,7 @@ import { item } from './item';
 import { advert } from './advert';
 
 function App() {
+  
 const [cart, setCart] = useState(item);
 const [add, setAdd] = useState(0);
 const {id, picture, priceTwo, productTwo} = advert[add];
@@ -36,8 +37,12 @@ const prevItem = () => {
   }))
 }
   return (
+    
     <div className="App">
-
+    <div>
+    <advert />
+    <item />
+  </div>
       <header className="App-header">
        <div>
         <h1>TechnoPort Shop</h1>
